@@ -1,0 +1,50 @@
+@media only screen and (max-width: 992px) {
+  #forms {
+    width: auto;
+    padding: 10px 15px;
+  }
+  .form-vertical,
+  .form-horizontal {
+    float: none;
+    margin: 0 auto;
+  }
+  .table-wrap {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .table-wrap {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .form-horizontal .form-inner {
+    display: block;
+  }
+  .form-horizontal .field-wrap,
+  .form-vertical {
+    width: 100%;
+    max-width: 100%;
+  }
+  .popup-form {
+    width: auto;
+    left: 15px;
+    right: 15px;
+    margin: 0;
+    top: 20px;
+  }
+  .popup-wrap {
+    padding: 0 15px;
+  }
+  .popup-form .field-wrap {
+    float: none;
+    width: auto;
+  }
+  .popup-form .field-wrap:first-child ~ .field-wrap {
+    margin-left: 0px;
+  }
+  .popup-form button {
+    float: none;
+    margin: 0 auto;
+  }
+}

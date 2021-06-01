@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #e5e8ed;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.clearfix::before {
+  display: block;
+  content: "";
+  clear: both;
+}
+h6 {
+  font-size: 12px;
+  margin: 0 0 12px;
+  color: #000;
+}
+#forms {
+  width: 1240px;
+  margin: 20px auto 0;
+}
+form {
+  margin-bottom: 100px;
+}
+.form-inner {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 18px 17px;
+}
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #c3ccd9;
+  color: #868c96;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-bottom: 18px;
+  padding: 0 10px 0 16px;
+}
+button {
+  cursor: pointer;
+  display: block;
+  border: none;
+  outline: none;
+}
+form button {
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #1493ff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  width: 245px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+.block-half + .block-half {
+  margin-left: 16px;
+}
+.block-half {
+  width: 247px;
+  float: left;
+}
+.form-vertical {
+  max-width: 280px;
+  float: left;
+}
+.form-horizontal {
+  max-width: 547px;
+  float: right;
+}
+.form-horizontal .form-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-horizontal .field-wrap {
+  width: 49%;
+}
+.form-horizontal .field-wrap:first-child {
+  order: 1;
+}
+.form-horizontal .field-wrap:nth-child(2) {
+  order: 3;
+}
+.form-horizontal .field-wrap:nth-child(3) {
+  order: 2;
+}
+.form-horizontal .field-wrap:nth-child(4) {
+  order: 4;
+}
+.form-horizontal button {
+  order: 5;
+}
+.table-wrap {
+  width: 595px;
+  margin-bottom: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background: #0a508c;
+  border: 1px solid #0a508c;
+  text-align: left;
+  color: #a5b5cb;
+}
+td {
+  background: #fff;
+  border: 1px solid #c8ccd4;
+  color: #4f5b65;
+}
+th,
+td {
+  padding: 8px;
+}
+
+.table-wrap button {
+  float: right;
+  margin-bottom: 13px;
+}
+.table-wrap .table-dublicate {
+  padding: 0 17px;
+  line-height: 24px;
+  color: #fff;
+  background: #1493ff;
+  border-radius: 2px;
+}
+.table-wrap .table-remove {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px 13px 18px;
+  padding-top: 2px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='12px' viewBox='0 0 121.31 122.876' enable-background='new 0 0 121.31 122.876' fill='red' xml:space='preserve'%3E%3Cg%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M90.914,5.296c6.927-7.034,18.188-7.065,25.154-0.068 c6.961,6.995,6.991,18.369,0.068,25.397L85.743,61.452l30.425,30.855c6.866,6.978,6.773,18.28-0.208,25.247 c-6.983,6.964-18.21,6.946-25.074-0.031L60.669,86.881L30.395,117.58c-6.927,7.034-18.188,7.065-25.154,0.068 c-6.961-6.995-6.992-18.369-0.068-25.397l30.393-30.827L5.142,30.568c-6.867-6.978-6.773-18.28,0.208-25.247 c6.983-6.963,18.21-6.946,25.074,0.031l30.217,30.643L90.914,5.296L90.914,5.296z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+}
+
+td .button {
+  width: 49%;
+  text-align: center;
+  display: inline-block;
+  text-decoration: underline;
+}
+.edit-row {
+  color: #067ce1;
+}
+.delete-row {
+  color: #b02337;
+}
+td .button span {
+  cursor: pointer;
+}
+.field-wrap {
+  position: relative;
+}
+.error input {
+  border-color: red;
+}
+.error .errorMsg {
+  display: block;
+}
+.errorMsg {
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 43px;
+  font-size: 10px;
+  display: none;
+}
+.table-wrap .edit-row,
+.table-wrap .delete-row {
+  float: none;
+  margin: 0;
+  background: transparent;
+  display: inline-block;
+  text-decoration: underline;
+}
+.button-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-headline {
+  background: #393939;
+  color: #fff;
+  line-height: 37px;
+  margin: -23px -23px 23px;
+  border-bottom: 1px solid #959595;
+  padding: 0 23px;
+  position: relative;
+}
+
+.popup-form {
+  width: 535px;
+  top: 50%;
+  left: 50%;
+  margin-left: -260px;
+  margin-top: -150px;
+  position: absolute;
+}
+.popup-form .form-inner {
+  padding: 23px;
+}
+.popup-form .field-wrap {
+  float: left;
+  width: 155px;
+}
+.popup-form .field-wrap:first-child ~ .field-wrap {
+  margin-left: 12px;
+}
+.popup-form button {
+  width: 321px;
+  float: right;
+}
+.popup-form label {
+  width: 155px;
+  line-height: 23px;
+  vertical-align: middle;
+  display: inline-block;
+  color: #868c96;
+}
+.popup-form input[type="checkbox"] {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 3px;
+}
+
+.popup-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.popup-wrap.show {
+  visibility: visible;
+  opacity: 1;
+}
+.popup-form .error input[type="text"] {
+  margin-bottom: 0;
+}
+.popup-form .errorMsg {
+  position: static;
+  margin: 3px 0;
+}
+input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+
+.close-modal {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px 13px 18px;
+  padding-top: 2px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='12px' viewBox='0 0 121.31 122.876' enable-background='new 0 0 121.31 122.876' fill='white' xml:space='preserve'%3E%3Cg%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M90.914,5.296c6.927-7.034,18.188-7.065,25.154-0.068 c6.961,6.995,6.991,18.369,0.068,25.397L85.743,61.452l30.425,30.855c6.866,6.978,6.773,18.28-0.208,25.247 c-6.983,6.964-18.21,6.946-25.074-0.031L60.669,86.881L30.395,117.58c-6.927,7.034-18.188,7.065-25.154,0.068 c-6.961-6.995-6.992-18.369-0.068-25.397l30.393-30.827L5.142,30.568c-6.867-6.978-6.773-18.28,0.208-25.247 c6.983-6.963,18.21-6.946,25.074,0.031l30.217,30.643L90.914,5.296L90.914,5.296z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 50%;
+  margin-top: -12px;
+  cursor: pointer;
+}
